@@ -1,0 +1,10 @@
+{
+    "matplotlib": 
+    {
+        "style":      "ggplot",
+        "fontsize":    16,
+        "markersize":   5.0,
+        "linewidth":    1.5
+    }
+}
+
