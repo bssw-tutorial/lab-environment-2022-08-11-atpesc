@@ -5,6 +5,7 @@
 # job is executed, the binaries must be rebuilt.  Therefore, good and immediate
 # communication about changes to "current" is important.
 SETUP_SW_ENV=$MYSTUDY_DATA_CLONE/sites/bebop/setup_current_intel_mpich_stack.sh
+# The "current" script is a sym link to an actual script.  Print out the target.
 ls -la $SETUP_SW_ENV
 source $SETUP_SW_ENV
 module list
