@@ -1,5 +1,5 @@
 */.ipynb_checkpoints
 tools/mytool_pypkg/dist
-tools/mytool_pypkg/.eggs
-tools/mytool_pypkg/mytool.egg-info
-tools/mytool_pypkg/mytool/__pycache__
+tools/mytool_pypkg/build
+tools/mytool_pypkg/src/mytool.egg-info
+tools/mytool_pypkg/src/mytool/__pycache__

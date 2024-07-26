@@ -12,9 +12,9 @@ from pathlib import Path
 
 import mytool
 
-FILE_PATH = Path(__file__).parent
-TEST_PATH = FILE_PATH.joinpath('TestData')
-DATA_PATH = FILE_PATH.joinpath('PkgData')
+TESTS_PATH = Path(__file__).parent
+TEST_DATA_PATH = TESTS_PATH.joinpath('TestData').resolve()
+PKG_DATA_PATH = TESTS_PATH.joinpath('..', 'PkgData').resolve()
 
 class Test1(unittest.TestCase):
     def setUp( self ):
@@ -31,13 +31,3 @@ class Test1(unittest.TestCase):
 
     def testC(self):
         time.sleep(0.35)
-
-def suite():
-    suite = unittest.TestSuite()
-    suite.addTest( unittest.makeSuite( Test1 ) )
-    
-    return suite
-
-if __name__ == "__main__":
-    unittest.TextTestRunner( verbosity=2 ).run( suite() )
-

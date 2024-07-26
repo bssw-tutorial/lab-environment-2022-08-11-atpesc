@@ -4,7 +4,7 @@
 # NOTE: If the gatekeepers change the "current" links after a build but before a
 # job is executed, the binaries must be rebuilt.  Therefore, good and immediate
 # communication about changes to "current" is important.
-SETUP_SW_ENV=$MYSTUDY_DATA_CLONE/sites/summit/setup_current_nvhpc_mpich_stack.sh
+SETUP_SW_ENV=$MYSTUDY_DATA_CLONE/sites/summit/setup_current_nvhpc_spectrum_stack.sh
 # The "current" script is a sym link to an actual script.  Print out the target.
 ls -la $SETUP_SW_ENV
 source $SETUP_SW_ENV
